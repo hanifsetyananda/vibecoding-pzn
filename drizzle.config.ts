@@ -5,8 +5,8 @@ export default defineConfig({
   out: "./drizzle",
   dialect: "mysql",
   dbCredentials: {
-    url: process.env.DATABASE_URL || "mysql://root:@localhost:3306/vibecoding_pzn",
+    url: process.env.DATABASE_URL || "mysql://brooky:okesiap123@localhost:3306/vibecoding_pzn",
   },
   verbose: true,
-  strict: true,
+  strict: false,
 });

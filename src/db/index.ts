@@ -2,7 +2,7 @@ import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
 import * as schema from "./schema.ts";
 
-const connectionUri = process.env.DATABASE_URL || "mysql://root:@localhost:3306/vibecoding_pzn";
+const connectionUri = process.env.DATABASE_URL || "mysql://brooky:okesiap123@localhost:3306/vibecoding_pzn";
 
 // Membuat connection pool ke MySQL
 const poolConnection = mysql.createPool({

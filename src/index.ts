@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
-import { userRoutes } from "./routes/users.ts";
+import { usersRoute } from "./routes/users-route.ts";
 
 const app = new Elysia()
   // Endpoint root untuk health check
@@ -9,7 +9,7 @@ const app = new Elysia()
     timestamp: new Date().toISOString(),
   }))
   // Mendaftarkan modular router
-  .use(userRoutes)
+  .use(usersRoute)
   .listen(process.env.PORT || 3000);
 
 console.log(
