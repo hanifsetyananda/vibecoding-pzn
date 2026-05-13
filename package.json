@@ -1,0 +1,23 @@
+{
+  "name": "vibecoding-pzn",
+  "version": "1.0.0",
+  "description": "Proyek backend menggunakan ElysiaJS, Drizzle ORM, dan MySQL",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.39.0",
+    "elysia": "^1.2.0",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.2.0",
+    "drizzle-kit": "^0.30.0",
+    "typescript": "^5.7.0"
+  },
+  "module": "src/index.ts",
+  "type": "module"
+}
