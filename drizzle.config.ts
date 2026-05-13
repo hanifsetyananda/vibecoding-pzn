@@ -8,5 +8,5 @@ export default defineConfig({
     url: process.env.DATABASE_URL || "mysql://root:@localhost:3306/vibecoding_pzn",
   },
   verbose: true,
-  strict: true,
+  strict: false,
 });
